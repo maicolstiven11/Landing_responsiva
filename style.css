@@ -1,226 +1,219 @@
-*{
+/* === Estilos base (Desktop First) === */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: rgba(128, 128, 128, 0.219);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg,
+        rgba(150, 150, 150, 1) 0%,
+        rgba(212, 201, 83, 0.62) 11%,
+        rgba(237, 146, 0, 0.69) 27%,
+        rgb(255, 166, 0) 50%,
+        rgba(237, 146, 0, 0.48) 70%,
+        rgba(237, 221, 83, 0.59) 89%,
+        rgba(150, 150, 150, 1) 100%);
+    color: #333;
+    padding: 1em;
 }
-.aside{
-    margin-top: -4.5px;
-    margin-right: 0px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    float: right;
-    width: 100px;
-    height: 88.1vh;
-}
-/* Lista del menú (vertical) */
-.aside ul {
+
+.menu_nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    background-color: #222;
+    padding: 1em 0;
     text-align: center;
 }
 
-/* Espaciado entre los íconos del menú */
-.aside ul li {
-    margin: 60px 0;
-}
-
-/* Íconos dentro del aside (centrados en la parte baja) */
-li img {
-    width: 54px;
-    height: auto;
-    position: relative;
-    top: 35vh;
-    left: -6px;
-}
-
-/* Imagen de la casa (logo principal) */
-.aside_house img{ 
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 40px;
-    left: 12px;
-    right: 20px;
-}
-
-header{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 110px;
+.menu_nav ul li {
     display: inline-block;
-    border-bottom: solid black;
-    
-
-}
-/* Barra de navegación superior (al lado del aside) */
-.menu_nav {
-    float: right;
-    width: 91%; 
-    padding: 40px;
+    margin: 0 ;
 }
 
-/* Lista del nav */
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-.ul aside{
-    margin: 0;
-    padding: 0;
-}
-
-/* Ítems del menú horizontal */
-nav li {
-    display: inline-block;
-    margin-left: 18vh;
-}
-
-/* Estilo de los enlaces del menú */
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.5s;
-}
-nav a:hover{
-    font-size: 15px;
-    font-weight: bold;
-
-}
-
-
-main .derecha{
-    background-color: rgba(255, 255, 255, 0.425);
-    display: block;
-    margin-top: 50px;
-    margin-left: 98vh;
-    width: 800px;
-    height: 78vh;
-    transition: 0.5s;
-    text-align: center;
-}
-.derecha h1{
-    padding: 40px;
-}
-.derecha img{
-    margin-top: 40px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-.derecha button{
-    border: 1 solid black;
-    width: 30vh;
-    margin: 1px;
-    height: 4vh;
-}
-.derecha button:hover{
-    font-size: 15px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.466);
+.menu_nav ul li a {
     color: white;
-    border: 1px solid rgb(51, 184, 218);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.menu_nav ul li a:hover {
+    color: orange;
+    text-decoration: underline;
+    font-size: 18px;
+    
+}
+
+.aside {
+    position: absolute;
+    top: 20%;
+    left: 1em;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+}
+
+.ul.aside {
+    list-style: none;
+}
+
+.ul.aside li {
+    margin: 1em 0;
+}
+
+.ul.aside li img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+main {
+    padding: 2em;
+}
+
+.derecha, .izquierda {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+.derecha {
+    margin-right: 0;
+}
+
+.izquierda h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.izquierda p {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+.izquierda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.izquierda button {
+    padding: 0.75em ;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.izquierda button:hover {
+    background-color: darkorange;
+}
+
+.texto_izquierda h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+
+.texto_izquierda p {
+    margin: 1em ;
+    line-height: 1.6;
+}
+
+.izquierda_button,
+.izquierda_button2 {
+    padding: 0.75em ;
+    margin-right: 1em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
 }
 main .izquierda{
-    background-color: rgba(255, 255, 255, 0.425);
-    display: block;
-    margin-left: auto;
-    margin-top: -78vh;
-    margin-left: 40px;
-    width: 800px;
-    height: 78vh;
-    transition: 0.5s;
+    width: 750px;
+    margin-left: 70px;
+}
+main .derecha{
+    margin-right: 50px;
 }
 
-
-@media screen and (max-width: 1716px){
-    main .izquierda{
-        width: 700px;
-    }
-    main .derecha{
-        width: 700px;
-    }
+.izquierda_button {
+    background-color: #0077cc;
 }
-@media screen and (max-width: 1614px){
-    main .izquierda{
-        margin-left: 90px;
-        width: 590px;
+
+.izquierda_button2 {
+    background-color: #00aa88;
+}
+
+.izquierda_button:hover {
+    background-color: #005fa3;
+}
+
+.izquierda_button2:hover {
+    background-color: #008866;
+}
+
+/* === Media Queries === */
+@media (max-width: 64em) {
+    .derecha, .izquierda {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
     }
-    main .derecha{
-        margin-left: 90vh;
-        width: 590px;
+
+    .menu_nav ul li {
+        display: block;
+        margin: 0.5em 0;
     }
-} 
-@media screen and (max-width: 1480px){
-    main .izquierda{
-        margin-left: 99px;
-        width: 550px;
+
+    .aside {
+        position: static;
+        margin: 1em auto;
+        text-align: center;
     }
-    main .derecha{
-        margin-left: 85vh;
-        width: 550px;
+
+    .ul.aside {
+        display: inline-block;
     }
-    nav a{
-        margin-left: -30px;
-        font-size: 15px;
-    }
-} 
-@media screen and (max-width: 1379px){
-    main .izquierda{
-        margin-left: 90px;
-        width: 470px;
-    }
-    main .derecha{
-        margin-left: 80vh;
-        width: 470px;
+
+    .ul.aside li {
+        display: inline-block;
+        margin: 0 0.5em;
     }
 }
 
-@media screen and (max-width: 1265px){
-    main .izquierda{
-        margin-left: 100px;
-        width: 400px;
+@media (max-width: 40em) {
+    body {
+        padding: 0.5em;
     }
-    main .derecha{
-        margin-left: 80vh;
-        width: 400px;
+
+    .menu_nav ul {
+        padding: 0.5em;
     }
-    nav a{
-        margin-left: -30px;
-        font-size: 12px;
+
+    .derecha h1,
+    .texto_izquierda h1 {
+        font-size: 1.5rem;
     }
-}
-@media screen and (max-width: 1163px){
-    main .izquierda{
-        margin-left: 100px;
-        width: 350px;
+
+    .derecha p,
+    .texto_izquierda p {
+        font-size: 1rem;
     }
-    main .derecha{
-        margin-left: 70vh;
-        width: 350px;
-    }
-    nav a{
-        margin-left: -30px;
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 1119px){
-    main .izquierda{
-        margin-left: 80px;
-        width: 350px;
-    }
-    main .derecha{
-        margin-left: 55vh;
-        width: 350px;
-    }
-    nav a{
-        margin-left: -10px;
-        font-size: 8px;
+
+    .izquierda_button,
+    .izquierda_button2,
+    .derecha button {
+        width: 100%;
+        margin-bottom: 1em;
     }
 }
