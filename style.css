@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.219);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.aside{
+    margin-top: -4.5px;
+    margin-right: 0px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 88.1vh;
+}
+/* Lista del menú (vertical) */
+.aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Espaciado entre los íconos del menú */
+.aside ul li {
+    margin: 60px 0;
+}
+
+/* Íconos dentro del aside (centrados en la parte baja) */
+li img {
+    width: 54px;
+    height: auto;
+    position: relative;
+    top: 35vh;
+    left: -6px;
+}
+
+/* Imagen de la casa (logo principal) */
+.aside_house img{ 
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    left: 12px;
+    right: 20px;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 110px;
+    display: inline-block;
+    border-bottom: solid black;
+    
+
+}
+/* Barra de navegación superior (al lado del aside) */
+.menu_nav {
+    float: right;
+    width: 91%; 
+    padding: 40px;
+}
+
+/* Lista del nav */
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+.ul aside{
+    margin: 0;
+    padding: 0;
+}
+
+/* Ítems del menú horizontal */
+nav li {
+    display: inline-block;
+    margin-left: 18vh;
+}
+
+/* Estilo de los enlaces del menú */
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+nav a:hover{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+
+main .derecha{
+    background-color: rgba(255, 255, 255, 0.425);
+    display: block;
+    margin-top: 50px;
+    margin-left: 98vh;
+    width: 800px;
+    height: 78vh;
+    transition: 0.5s;
+    text-align: center;
+}
+.derecha h1{
+    padding: 40px;
+}
+.derecha img{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.derecha button{
+    border: 1 solid black;
+    width: 30vh;
+    margin: 1px;
+    height: 4vh;
+}
+.derecha button:hover{
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+    border: 1px solid rgb(51, 184, 218);
+}
+main .izquierda{
+    background-color: rgba(255, 255, 255, 0.425);
+    display: block;
+    margin-left: auto;
+    margin-top: -78vh;
+    margin-left: 40px;
+    width: 800px;
+    height: 78vh;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 1716px){
+    main .izquierda{
+        width: 700px;
+    }
+    main .derecha{
+        width: 700px;
+    }
+}
+@media screen and (max-width: 1614px){
+    main .izquierda{
+        margin-left: 90px;
+        width: 590px;
+    }
+    main .derecha{
+        margin-left: 90vh;
+        width: 590px;
+    }
+} 
+@media screen and (max-width: 1480px){
+    main .izquierda{
+        margin-left: 99px;
+        width: 550px;
+    }
+    main .derecha{
+        margin-left: 85vh;
+        width: 550px;
+    }
+    nav a{
+        margin-left: -30px;
+        font-size: 15px;
+    }
+} 
+@media screen and (max-width: 1379px){
+    main .izquierda{
+        margin-left: 90px;
+        width: 470px;
+    }
+    main .derecha{
+        margin-left: 80vh;
+        width: 470px;
+    }
+}
+
+@media screen and (max-width: 1265px){
+    main .izquierda{
+        margin-left: 100px;
+        width: 400px;
+    }
+    main .derecha{
+        margin-left: 80vh;
+        width: 400px;
+    }
+    nav a{
+        margin-left: -30px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1163px){
+    main .izquierda{
+        margin-left: 100px;
+        width: 350px;
+    }
+    main .derecha{
+        margin-left: 70vh;
+        width: 350px;
+    }
+    nav a{
+        margin-left: -30px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1119px){
+    main .izquierda{
+        margin-left: 80px;
+        width: 350px;
+    }
+    main .derecha{
+        margin-left: 55vh;
+        width: 350px;
+    }
+    nav a{
+        margin-left: -10px;
+        font-size: 8px;
+    }
+}
